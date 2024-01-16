@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Design Apps</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/2020.3.1021/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/Content/kendo/2020.3.1021/kendo.default.min.css" rel="stylesheet" />
+    <link href="~/Content/Select2/select2.css" rel="stylesheet" />
+    <link href="~/Content/myselect2.css" rel="stylesheet" />
+    <link href="~/Content/select.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryui")
+    <script src="~/Scripts/moment.min.js"></script>
+    @Scripts.Render("~/bundles/bootstrap-datetime")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/tp.widget.bootstrap.min.js"></script>
+    <script src="~/Scripts/select.js"></script>
+    <script src="~/Scripts/bootbox.js"></script>
+    <script src="~/Scripts/notify.min.js"></script>
+</head>
+
+<body class="divi js-ready" style="background: white; overflow: auto;">
+    @*NavBar*@
+
+    <div id="main-nav" class="transparent-header solid-header">
+        @if (Session["logUser"] != null)
+        {
+            @*<div class="menu-bg-wrapper">
+                    <div class="menu-bg"></div>
+                    <div class="menu-arrow"></div>
+                </div>*@
+
+            if (Convert.ToInt16(Session["SideMenuChecked"].ToString()) == 1)
+            {
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" checked />
+            }
+            else
+            {
+                <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+            }
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner" style="margin-top: 120px;">
+                    @if (Session["MenuList"] != null)
+                    {
+                        @*var lstMenu = Session["MenuList"] as IEnumerable<DemoMVCApplication.Models.MenuName>;
+                        foreach (var menu in lstMenu)
+                        {
+                            <li><a href="@menu.MenuControl"><i class="@menu.CSSClass"></i> @menu.MenuName1</a></li>
+                        }*@
+                    }
+                    @*<li><a href="@Url.Action("Index", "Home")"><i class="fa fa-pencil-square-o"></i> Home</a></li>
+                        @if (Session["UserType"].ToString() != "UT-04")
+                        {
+                            if (Convert.ToInt16(Session["User List Show"].ToString()) == 1)
+                            {
+                                <li><a href="@Url.Action("UserRegistration", "User")"><i class="fa fa-user-circle"></i> User List</a></li>
+                            }
+                            if (Convert.ToInt16(Session["User Access Show"].ToString()) == 1)
+                            {
+                                <li><a href="@Url.Action("UserAccess", "User")"><i class="fa fa-list-alt"></i> User Access</a></li>
+                            }
+                            if (Convert.ToInt16(Session["Product List Show"].ToString()) == 1)
+                            {
+                                <li><a href="@Url.Action("ProductUploadIndex", "User")"><i class="fa fa-truck"></i> Product List</a></li>
+                            }
+                        }*@
+                    <li><a href="@Url.Action("UserLogin", "User")" style="color: #ca4d4d"><i class="fa fa-lock"></i> Logout</a></li>
+                </ul>
+            </div>
+        }
+        <div class="row-container">
+            <img src="~/Content/images/unnamed.png" width="150" height="150" class="pull-left" />
+        </div>
+    </div>
+    @*else
+        {
+            <div id="main-nav" class="transparent-header-before-login solid-header">
+                <div class="row-container">
+                    <img src="~/Content/images/unnamed.png" width="150" height="150" class="pull-left" />
+                </div>
+            </div>
+        }*@
+
+    <div class="container">
+        @RenderBody()
+    </div>
+    <br />
+    <footer class="mainfooter">
+        <p style="color: #505863;">&copy; @DateTime.Now.Year - ICT, Pacific Jeans Limited</p>
+    </footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

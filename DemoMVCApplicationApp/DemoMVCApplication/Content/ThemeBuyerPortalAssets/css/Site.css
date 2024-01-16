@@ -1,0 +1,403 @@
+﻿::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7a8d9a;
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #71988c;
+    }
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.main-footer-hbutton {
+    background: black !important;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    z-index: 820;
+}
+
+.hbutton {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .hbutton span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+        .hbutton span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .hbutton:hover span {
+        padding-right: 25px;
+    }
+
+        .hbutton:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+html, body {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    /*text-align: center;*/
+}
+
+.hsvg-wrapper {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+}
+
+.hshape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+}
+
+.htext {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 140 540;
+        stroke-dashoffset: -474;
+        stroke-width: 8px;
+    }
+
+    100% {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 0;
+        stroke-width: 2px;
+    }
+}
+
+.hsvg-wrapper:hover .hshape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+}
+
+.ha_style {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.lbl-font {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-weight: bold;
+}
+
+.txt-font {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.div-header {
+    border: 1px solid #326e86;
+    background: #326e86;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+tr td,
+tr th {
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.table td, .table th {
+    padding: 0px !important;
+}
+
+.thead-color {
+    background: #6193ad;
+}
+
+.table {
+    margin: auto !important;
+    width: 98% !important;
+}
+
+.txt-box-sty {
+    width: auto;
+    height: 32px;
+    border: 1px solid #50a2fb;
+    border-radius: 4px;
+}
+
+txt-box-sty:hover {
+    border: 1px solid #3fe85c !important;
+}
+
+txt-box-sty:focus {
+    border: 1px solid #3fe85c !important;
+}
+
+.row {
+    display: inline-block;
+    width: 100% !important; /*100% !important;*/
+    margin: 0px;
+}
+
+.default-txt {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.default-btn {
+    border: 1px solid #45c0e8;
+    margin: 5px;
+}
+
+.default-row {
+    display: flex;
+}
+
+.default-margin {
+    margin: 5px;
+}
+
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.mainfooter {
+    text-align: left !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif !important;
+    font-size: 10px;
+    color: black !important;
+    bottom: 0 !important;
+    position: absolute !important;
+    width: 99%;
+    /*background-image: linear-gradient(360deg, #7a8288, white);*/
+    background: transparent;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #ffffff !important;
+    background-color: #ec1c24 !important;
+    border-color: #dee2e6 #dee2e6 #fff !important;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+    background-color: #f9f4f4 !important;
+}
+
+.modal-header {
+    background: #206282;
+}
+
+.modal-footer {
+    padding: .10rem !important;
+    border: none !important;
+}
+
+.bootbox-body {
+    color: #000;
+    font-family: 'Book Antiqua';
+}
+
+.nav-link {
+    display: block !important;
+    padding: .5rem 1.5rem !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.btn-without-border {
+    border: none;
+}
+
+    .btn-without-border:hover, .btn-without-border:focus {
+        border: none;
+    }
+
+.default-span {
+    border: #d2cece 1px solid;
+    border-radius: 4px;
+    padding: 10px;
+    color: black;
+}
+
+.span-header {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    color: #198bb7;
+}
+
+.img-description {
+    color: #07232f;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    text-align: center;
+    padding: 25px;
+}
+
+.buyer_view_Label {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    font-family: 'Book Antiqua';
+    font-weight: normal;
+    color: #fcfcfc;
+}
+
+.link-p {
+    font-weight: bold;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.prod-rem-btn {
+    font-style: normal;
+    border: 1px solid black;
+    border-radius: 4px;
+    border-radius: 4px;
+}
+
+.prod-div {
+    background: #e5e2e2;
+    margin-top: 2px;
+    padding-right: 0px;
+    margin-right: 3px;
+}
+
+.form-control {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    font-size: 14px;
+}
+
+.inst-div {
+    font-style: italic;
+    font-style: italic;
+    font-size: 12px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+    color: #198bb7;
+}
+
+/*--------------------------------------------------------------------tab scroller---------------------------------------------------------------*/
+.tab-wrapper {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px;
+    height: 50px;
+}
+
+.list {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    min-width: 3000px;
+    margin-left: 12px;
+    margin-top: 0px;
+}
+
+    .list li {
+        display: table-cell;
+        position: relative;
+        text-align: center;
+        cursor: grab;
+        cursor: -webkit-grab;
+        color: #efefef;
+        vertical-align: middle;
+    }
+
+.scroller {
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    padding: 7px;
+    padding-top: 11px;
+    white-space: no-wrap;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.scroller-right {
+    float: right;
+}
+
+.scroller-left {
+    float: left;
+}
+/*--------------------------------------------------------------------tab scroller---------------------------------------------------------------*/
