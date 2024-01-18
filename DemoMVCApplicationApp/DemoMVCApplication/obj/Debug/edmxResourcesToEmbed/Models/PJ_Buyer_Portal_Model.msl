@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Three_Sixty_RotationModelStoreContainer" CdmEntityContainer="Three_Sixty_RotationEntities">
+    <EntitySetMapping Name="UnauthorizedLogInfoes">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UnauthorizedLogInfo">
+        <MappingFragment StoreEntitySet="UnauthorizedLogInfo">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnauthorizedUserBlockInfoes">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UnauthorizedUserBlockInfo">
+        <MappingFragment StoreEntitySet="UnauthorizedUserBlockInfo">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="BlockTime" ColumnName="BlockTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BuyerInfoes">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.BuyerInfo">
+        <MappingFragment StoreEntitySet="BuyerInfo">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="BuyerName" ColumnName="BuyerName" />
+          <ScalarProperty Name="BuyerShortName" ColumnName="BuyerShortName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BuyerInfo_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.BuyerInfo_UDTracking">
+        <MappingFragment StoreEntitySet="BuyerInfo_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="BuyerName" ColumnName="BuyerName" />
+          <ScalarProperty Name="BuyerShortName" ColumnName="BuyerShortName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryInfoes">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.CategoryInfo">
+        <MappingFragment StoreEntitySet="CategoryInfo">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryInfo_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.CategoryInfo_UDTracking">
+        <MappingFragment StoreEntitySet="CategoryInfo_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogChecks">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.LogCheck">
+        <MappingFragment StoreEntitySet="LogCheck">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LogCheck1" ColumnName="LogCheck" />
+          <ScalarProperty Name="StartsFrom" ColumnName="StartsFrom" />
+          <ScalarProperty Name="CreatedBY" ColumnName="CreatedBY" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LogCheck_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.LogCheck_UDTracking">
+        <MappingFragment StoreEntitySet="LogCheck_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LogCheck" ColumnName="LogCheck" />
+          <ScalarProperty Name="StartsFrom" ColumnName="StartsFrom" />
+          <ScalarProperty Name="CreatedBY" ColumnName="CreatedBY" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+          <ScalarProperty Name="DeleteDateTime" ColumnName="DeleteDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginSummaries">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.LoginSummary">
+        <MappingFragment StoreEntitySet="LoginSummary">
+          <ScalarProperty Name="iAutoID" ColumnName="iAutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+          <ScalarProperty Name="LogoutTime" ColumnName="LogoutTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuNames">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.MenuName">
+        <MappingFragment StoreEntitySet="MenuName">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="MenuName1" ColumnName="MenuName" />
+          <ScalarProperty Name="MainMenuID" ColumnName="MainMenuID" />
+          <ScalarProperty Name="MenuLayer" ColumnName="MenuLayer" />
+          <ScalarProperty Name="MenuControl" ColumnName="MenuControl" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CSSClass" ColumnName="CSSClass" />
+          <ScalarProperty Name="FormType" ColumnName="FormType" />
+          <ScalarProperty Name="OrderBy" ColumnName="OrderBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductFieldNames">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.ProductFieldName">
+        <MappingFragment StoreEntitySet="ProductFieldName">
+          <ScalarProperty Name="iAutoID" ColumnName="iAutoID" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="SerialNo" ColumnName="SerialNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitInfoes">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UnitInfo">
+        <MappingFragment StoreEntitySet="UnitInfo">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="UnitShortName" ColumnName="UnitShortName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitInfo_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UnitInfo_UDTracking">
+        <MappingFragment StoreEntitySet="UnitInfo_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="UnitShortName" ColumnName="UnitShortName" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAuthentications">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UserAuthentication">
+        <MappingFragment StoreEntitySet="UserAuthentication">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+          <ScalarProperty Name="bShow" ColumnName="bShow" />
+          <ScalarProperty Name="bSave" ColumnName="bSave" />
+          <ScalarProperty Name="bEdit" ColumnName="bEdit" />
+          <ScalarProperty Name="bDelete" ColumnName="bDelete" />
+          <ScalarProperty Name="AssignedBy" ColumnName="AssignedBy" />
+          <ScalarProperty Name="EntryTime" ColumnName="EntryTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRegisters">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UserRegister">
+        <MappingFragment StoreEntitySet="UserRegister">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Text_Value" ColumnName="Text_Value" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserRegister_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UserRegister_UDTracking">
+        <MappingFragment StoreEntitySet="UserRegister_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Text_Value" ColumnName="Text_Value" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+          <ScalarProperty Name="DeleteDateTime" ColumnName="DeleteDateTime" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTypes">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UserType">
+        <MappingFragment StoreEntitySet="UserType">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="UserType1" ColumnName="UserType" />
+          <ScalarProperty Name="bSave" ColumnName="bSave" />
+          <ScalarProperty Name="bSelect" ColumnName="bSelect" />
+          <ScalarProperty Name="bUpdate" ColumnName="bUpdate" />
+          <ScalarProperty Name="bDelete" ColumnName="bDelete" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserType_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UserType_UDTracking">
+        <MappingFragment StoreEntitySet="UserType_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserTypeID" ColumnName="UserTypeID" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="bSave" ColumnName="bSave" />
+          <ScalarProperty Name="bSelect" ColumnName="bSelect" />
+          <ScalarProperty Name="bUpdate" ColumnName="bUpdate" />
+          <ScalarProperty Name="bDelete" ColumnName="bDelete" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserWiseBuyerAccesses">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.UserWiseBuyerAccess">
+        <MappingFragment StoreEntitySet="UserWiseBuyerAccess">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="BuyerAccess" ColumnName="BuyerAccess" />
+          <ScalarProperty Name="EntryBY" ColumnName="EntryBY" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdateIP" ColumnName="UpdateIP" />
+          <ScalarProperty Name="EntryDatetime" ColumnName="EntryDatetime" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BuyerViewAccesses">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.BuyerViewAccess">
+        <MappingFragment StoreEntitySet="BuyerViewAccess">
+          <ScalarProperty Name="iAutoID" ColumnName="iAutoID" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="AccessFlag" ColumnName="AccessFlag" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="EntryTime" ColumnName="EntryTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BuyerViewAccess_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.BuyerViewAccess_UDTracking">
+        <MappingFragment StoreEntitySet="BuyerViewAccess_UDTracking">
+          <ScalarProperty Name="iAutoID" ColumnName="iAutoID" />
+          <ScalarProperty Name="DateFrom" ColumnName="DateFrom" />
+          <ScalarProperty Name="DateTo" ColumnName="DateTo" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="AccessFlag" ColumnName="AccessFlag" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UserIP" ColumnName="UserIP" />
+          <ScalarProperty Name="EntryTime" ColumnName="EntryTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductDetails">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.ProductDetail">
+        <MappingFragment StoreEntitySet="ProductDetails">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductDetails_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.ProductDetails_UDTracking">
+        <MappingFragment StoreEntitySet="ProductDetails_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="TransactionCount" ColumnName="TransactionCount" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductFieldAccesses">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.ProductFieldAccess">
+        <MappingFragment StoreEntitySet="ProductFieldAccess">
+          <ScalarProperty Name="iAutoID" ColumnName="iAutoID" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+          <ScalarProperty Name="Preview" ColumnName="Preview" />
+          <ScalarProperty Name="EntryBy" ColumnName="EntryBy" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedIP" ColumnName="UpdatedIP" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="CRUDFlag" ColumnName="CRUDFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductMasters">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.ProductMaster">
+        <MappingFragment StoreEntitySet="ProductMaster">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="WashName" ColumnName="WashName" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="StyleName" ColumnName="StyleName" />
+          <ScalarProperty Name="IMG_Product" ColumnName="IMG_Product" />
+          <ScalarProperty Name="DesignType" ColumnName="DesignType" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductMaster_UDTracking">
+      <EntityTypeMapping TypeName="Three_Sixty_RotationModel.ProductMaster_UDTracking">
+        <MappingFragment StoreEntitySet="ProductMaster_UDTracking">
+          <ScalarProperty Name="AutoID" ColumnName="AutoID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="WashName" ColumnName="WashName" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="StyleName" ColumnName="StyleName" />
+          <ScalarProperty Name="IMG_Product" ColumnName="IMG_Product" />
+          <ScalarProperty Name="DesignType" ColumnName="DesignType" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="EntryIP" ColumnName="EntryIP" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="EntryDateTime" ColumnName="EntryDateTime" />
+          <ScalarProperty Name="UDFlag" ColumnName="UDFlag" />
+          <ScalarProperty Name="DeletedBy" ColumnName="DeletedBy" />
+          <ScalarProperty Name="DeleteDateTime" ColumnName="DeleteDateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spGetAllBuyerWithAccess" FunctionName="Three_Sixty_RotationModel.Store.spGetAllBuyerWithAccess">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Three_Sixty_RotationModel.spGetAllBuyerWithAccess_Result">
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="BuyerShortName" ColumnName="BuyerShortName" />
+          <ScalarProperty Name="BuyerName" ColumnName="BuyerName" />
+          <ScalarProperty Name="AccessFlag" ColumnName="AccessFlag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetAllImage" FunctionName="Three_Sixty_RotationModel.Store.spGetAllImage">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Three_Sixty_RotationModel.spGetAllImage_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="UnitName" ColumnName="UnitName" />
+          <ScalarProperty Name="EndUser" ColumnName="EndUser" />
+          <ScalarProperty Name="StyleName" ColumnName="StyleName" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="WashName" ColumnName="WashName" />
+          <ScalarProperty Name="BuyerID" ColumnName="BuyerID" />
+          <ScalarProperty Name="BuyerName" ColumnName="BuyerName" />
+          <ScalarProperty Name="Img_Loc" ColumnName="Img_Loc" />
+          <ScalarProperty Name="AccessFlag" ColumnName="AccessFlag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

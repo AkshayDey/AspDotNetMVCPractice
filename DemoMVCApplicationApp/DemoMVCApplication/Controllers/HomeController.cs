@@ -1,4 +1,5 @@
 ﻿using DemoMVCApplication.Models;
+using PJ_Buyer_Portal.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,26 @@ namespace DemoMVCApplication.Controllers
     {
         public ActionResult Index()
         {
-            var PersonOne = new Employee()
+            //var PersonOne = new Employee()
+            //{
+            //   Id = 1,
+            //   Name = "Foo",
+            //   Address = "Test Address" 
+            //};
+            //return View(PersonOne);
+
+            if (Session["logUser"] != null)
             {
-               Id = 1,
-               Name = "Foo",
-               Address = "Test Address" 
-            };
-            return View(PersonOne);
+                if (CommonMethodController.checkMenuURL(Session["UserType"].ToString(), Session["logUserID"].ToString(), "M-1")
+                    || (Session["UserType"].ToString() == "UT-01" || Session["UserType"].ToString() == "UT-02" || Session["UserType"].ToString() == "UT-04"))
+                {
+                    Session["SideMenuChecked"] = 0;
+                    return View();
+                }
+            }
+            return RedirectToAction("UserLogin", "User");
+
+
         }
 
         public ActionResult About()

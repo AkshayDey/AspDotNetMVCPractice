@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Three_Sixty_RotationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="UnauthorizedLogInfo">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnauthorizedUserBlockInfo">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BlockTime" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BuyerInfo">
+    <Key>
+      <PropertyRef Name="BuyerID" />
+      <PropertyRef Name="BuyerName" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="BuyerName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="BuyerShortName" Type="varchar" MaxLength="20" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BuyerInfo_UDTracking">
+    <Key>
+      <PropertyRef Name="BuyerID" />
+      <PropertyRef Name="BuyerName" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="BuyerName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="BuyerShortName" Type="varchar" MaxLength="20" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CategoryInfo">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="CategoryName" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CategoryInfo_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LogCheck">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="LogCheck" Type="datetime" Nullable="false" />
+    <Property Name="StartsFrom" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LogCheck_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="LogCheck" Type="datetime" Nullable="false" />
+    <Property Name="StartsFrom" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="20" />
+    <Property Name="DeleteDateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LoginSummary">
+    <Key>
+      <PropertyRef Name="iAutoID" />
+    </Key>
+    <Property Name="iAutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserIP" Type="varchar" MaxLength="20" />
+    <Property Name="LoginTime" Type="datetime" />
+    <Property Name="LogoutTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MenuName">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MenuID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MenuName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="MainMenuID" Type="varchar" MaxLength="10" />
+    <Property Name="MenuLayer" Type="int" />
+    <Property Name="MenuControl" Type="varchar" MaxLength="200" />
+    <Property Name="Status" Type="bit" />
+    <Property Name="CSSClass" Type="varchar" MaxLength="250" />
+    <Property Name="FormType" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="OrderBy" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductFieldName">
+    <Key>
+      <PropertyRef Name="iAutoID" />
+    </Key>
+    <Property Name="iAutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FieldID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FieldName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="SerialNo" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnitInfo">
+    <Key>
+      <PropertyRef Name="UnitID" />
+      <PropertyRef Name="UnitName" />
+      <PropertyRef Name="UnitShortName" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UnitID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UnitName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UnitShortName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UnitInfo_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UnitID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UnitName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UnitShortName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="UserAuthentication">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserName" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="MenuID" Type="varchar" MaxLength="10" />
+    <Property Name="bShow" Type="bit" Nullable="false" />
+    <Property Name="bSave" Type="bit" Nullable="false" />
+    <Property Name="bEdit" Type="bit" Nullable="false" />
+    <Property Name="bDelete" Type="bit" Nullable="false" />
+    <Property Name="AssignedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UserRegister">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Username" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Text_Value" Type="varchar" MaxLength="100" />
+    <Property Name="UserTypeID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="ContactNo" Type="varchar" MaxLength="20" />
+    <Property Name="Address" Type="varchar" MaxLength="250" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserRegister_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Text_Value" Type="varchar" MaxLength="100" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" />
+    <Property Name="UserTypeID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="DeletedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="ContactNo" Type="varchar" MaxLength="20" />
+    <Property Name="Address" Type="varchar" MaxLength="250" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+    <Property Name="DeleteDateTime" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserType">
+    <Key>
+      <PropertyRef Name="UserTypeID" />
+      <PropertyRef Name="UserType" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserTypeID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UserType" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="bSave" Type="bit" Nullable="false" />
+    <Property Name="bSelect" Type="bit" Nullable="false" />
+    <Property Name="bUpdate" Type="bit" Nullable="false" />
+    <Property Name="bDelete" Type="bit" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserType_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserTypeID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UserType" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="bSave" Type="bit" Nullable="false" />
+    <Property Name="bSelect" Type="bit" Nullable="false" />
+    <Property Name="bUpdate" Type="bit" Nullable="false" />
+    <Property Name="bDelete" Type="bit" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="UserWiseBuyerAccess">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="BuyerAccess" Type="bit" Nullable="false" />
+    <Property Name="EntryBY" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdateIP" Type="varchar" MaxLength="20" />
+    <Property Name="EntryDatetime" Type="datetime" Nullable="false" />
+    <Property Name="UpdateDateTime" Type="datetime" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BuyerViewAccess">
+    <Key>
+      <PropertyRef Name="iAutoID" />
+    </Key>
+    <Property Name="iAutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateFrom" Type="datetime" Nullable="false" />
+    <Property Name="DateTo" Type="datetime" Nullable="false" />
+    <Property Name="ProductID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessFlag" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EntryTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BuyerViewAccess_UDTracking">
+    <Key>
+      <PropertyRef Name="iAutoID" />
+    </Key>
+    <Property Name="iAutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DateFrom" Type="datetime" Nullable="false" />
+    <Property Name="DateTo" Type="datetime" Nullable="false" />
+    <Property Name="ProductID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccessFlag" Type="bit" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EntryTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductDetails">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionCount" Type="int" Nullable="false" />
+    <Property Name="ProductID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ImageName" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductDetails_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TransactionCount" Type="int" />
+    <Property Name="ProductID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ImageName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ProductFieldAccess">
+    <Key>
+      <PropertyRef Name="iAutoID" />
+    </Key>
+    <Property Name="iAutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="FieldID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Preview" Type="bit" Nullable="false" />
+    <Property Name="EntryBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedIP" Type="varchar" MaxLength="20" />
+    <Property Name="UpdateDateTime" Type="datetime" />
+    <Property Name="CRUDFlag" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductMaster">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="UnitID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EndUser" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WashName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ColorName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="StyleName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IMG_Product" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DesignType" Type="int" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductMaster_UDTracking">
+    <Key>
+      <PropertyRef Name="AutoID" />
+    </Key>
+    <Property Name="AutoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="CategoryID" Type="varchar" MaxLength="10" />
+    <Property Name="UnitID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EndUser" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="WashName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="ColorName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="StyleName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="IMG_Product" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DesignType" Type="int" Nullable="false" />
+    <Property Name="BuyerID" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="EntryIP" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EntryDateTime" Type="datetime" Nullable="false" />
+    <Property Name="UDFlag" Type="varchar" MaxLength="10" />
+    <Property Name="DeletedBy" Type="varchar" MaxLength="50" />
+    <Property Name="DeleteDateTime" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_ProductDetails_ProductMaster">
+    <End Role="ProductMaster" Type="Self.ProductMaster" Multiplicity="1" />
+    <End Role="ProductDetails" Type="Self.ProductDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductMaster">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="ProductDetails">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="spGetAllBuyerWithAccess" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ProdID" Type="varchar" Mode="In" />
+    <Parameter Name="chkDate" Type="datetime" Mode="In" />
+    <Parameter Name="previewFor" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spGetAllImage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BuyerID" Type="varchar" Mode="In" />
+    <Parameter Name="catID" Type="varchar" Mode="In" />
+    <Parameter Name="ProdID" Type="varchar" Mode="In" />
+    <Parameter Name="EndUser" Type="varchar" Mode="In" />
+    <Parameter Name="Style" Type="varchar" Mode="In" />
+    <Parameter Name="Color" Type="varchar" Mode="In" />
+    <Parameter Name="Wash" Type="varchar" Mode="In" />
+    <Parameter Name="previewFor" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="Three_Sixty_RotationModelStoreContainer">
+    <EntitySet Name="UnauthorizedLogInfo" EntityType="Self.UnauthorizedLogInfo" Schema="LogChk" store:Type="Tables" />
+    <EntitySet Name="UnauthorizedUserBlockInfo" EntityType="Self.UnauthorizedUserBlockInfo" Schema="LogChk" store:Type="Tables" />
+    <EntitySet Name="BuyerInfo" EntityType="Self.BuyerInfo" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="BuyerInfo_UDTracking" EntityType="Self.BuyerInfo_UDTracking" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="CategoryInfo" EntityType="Self.CategoryInfo" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="CategoryInfo_UDTracking" EntityType="Self.CategoryInfo_UDTracking" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="LogCheck" EntityType="Self.LogCheck" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="LogCheck_UDTracking" EntityType="Self.LogCheck_UDTracking" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="LoginSummary" EntityType="Self.LoginSummary" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="MenuName" EntityType="Self.MenuName" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="ProductFieldName" EntityType="Self.ProductFieldName" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UnitInfo" EntityType="Self.UnitInfo" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UnitInfo_UDTracking" EntityType="Self.UnitInfo_UDTracking" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UserAuthentication" EntityType="Self.UserAuthentication" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UserRegister" EntityType="Self.UserRegister" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UserRegister_UDTracking" EntityType="Self.UserRegister_UDTracking" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UserType" EntityType="Self.UserType" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UserType_UDTracking" EntityType="Self.UserType_UDTracking" Schema="Master" store:Type="Tables" />
+    <EntitySet Name="UserWiseBuyerAccess" EntityType="Self.UserWiseBuyerAccess" Schema="Setup" store:Type="Tables" />
+    <EntitySet Name="BuyerViewAccess" EntityType="Self.BuyerViewAccess" Schema="Trans" store:Type="Tables" />
+    <EntitySet Name="BuyerViewAccess_UDTracking" EntityType="Self.BuyerViewAccess_UDTracking" Schema="Trans" store:Type="Tables" />
+    <EntitySet Name="ProductDetails" EntityType="Self.ProductDetails" Schema="Trans" store:Type="Tables" />
+    <EntitySet Name="ProductDetails_UDTracking" EntityType="Self.ProductDetails_UDTracking" Schema="Trans" store:Type="Tables" />
+    <EntitySet Name="ProductFieldAccess" EntityType="Self.ProductFieldAccess" Schema="Trans" store:Type="Tables" />
+    <EntitySet Name="ProductMaster" EntityType="Self.ProductMaster" Schema="Trans" store:Type="Tables" />
+    <EntitySet Name="ProductMaster_UDTracking" EntityType="Self.ProductMaster_UDTracking" Schema="Trans" store:Type="Tables" />
+    <AssociationSet Name="FK_ProductDetails_ProductMaster" Association="Self.FK_ProductDetails_ProductMaster">
+      <End Role="ProductMaster" EntitySet="ProductMaster" />
+      <End Role="ProductDetails" EntitySet="ProductDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

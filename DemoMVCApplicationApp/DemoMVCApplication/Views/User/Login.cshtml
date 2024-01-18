@@ -1,0 +1,36 @@
+﻿<div class="blurred-box" ng-app="Des_App" ng-controller="UserRegistrationController" ng-init="">
+    <form id="loginForm">
+        <div class="user-login-box">
+            <span class="user-icon"></span>
+        </div>
+        <div ng-hide="chkFlag==true;">
+            <div class="user-login-box">
+                <input type="text" class="txt-font form-control txt-field" placeholder="Enter User Name" ng-model="log.Username" style="max-width: none;" />
+            </div>
+            <div class="user-login-box">
+                <button class="btn btn-success lbl-font txt-field" ng-click="loginUserCheck(log)" style="margin-right: 2px;">Next</button>
+            </div>
+        </div>
+
+        <div ng-show="chkFlag==true;">
+            <div class="user-login-box">
+                <input type="password" class="txt-font form-control txt-field" placeholder="Enter Password" ng-model="log.Password" style="max-width: none;" />
+            </div>
+            <div class="user-login-box">
+                <button class="btn btn-success lbl-font txt-field" ng-click="loginAction(log)" style="margin-right: 2px; ">Login</button>
+            </div>
+        </div>
+        <div class="user-login-box link-margin">
+            <a href="https://www.pacificjeans.com/" target="_blank">
+                <img class="link-img" src="~/Content/ThemeBuyerPortalAssets/img/websiteIcon.jpg" alt="www.pacificjeans.com" style="border-radius:50%; left:50%; margin: auto;" />
+                <p class="link-p">Visit Our Website</p>
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <link href="~/Content/ThemeBuyerPortalAssets/css/loginStyle.css" rel="stylesheet" />
+    <script src="~/Scripts/Controller/Des_App.js"></script>
+    <script src="~/Scripts/Controller/UserRegistrationController.js"></script>
+}
