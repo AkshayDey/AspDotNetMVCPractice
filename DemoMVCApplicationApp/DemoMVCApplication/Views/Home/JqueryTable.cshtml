@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "JqueryTable";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>JqueryTable</h2>
+
+<table id="myDataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+</table>
+
+<link href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css"  rel="stylesheet"/>
+
+@section scripts{
+    <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $("#employeeTable").DataTable(
+                {
+                    "ajax": {
+                        "url": "/Home/GetList",
+                        "type": "GET",
+                        "datatype": "json"
+                    },
+                    "columns": [
+                        { "data": "Name" },
+                        { "data": "Position" },
+                        { "data": "Office" },
+                        { "data": "Age" },
+                        { "data": "Salary" }
+                    ]
+
+                });
+
+        });
+
+    </script>
+}
+

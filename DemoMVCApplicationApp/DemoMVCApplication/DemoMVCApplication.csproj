@@ -4306,6 +4306,7 @@
     <Content Include="Views\Shared\_PJBuyerPortalLayout.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Home\JqueryTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

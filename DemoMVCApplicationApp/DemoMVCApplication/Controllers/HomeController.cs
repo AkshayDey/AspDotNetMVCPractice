@@ -36,6 +36,16 @@ namespace DemoMVCApplication.Controllers
 
         }
 
+        public ActionResult JqueryTable()
+        {
+            return View();
+        }
+
+        //public ActionResult GetList()
+        //{
+            
+        //}
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
