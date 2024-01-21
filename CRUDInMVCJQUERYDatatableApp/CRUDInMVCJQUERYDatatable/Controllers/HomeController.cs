@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUDInMVCJQUERYDatatable.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,14 @@ namespace CRUDInMVCJQUERYDatatable.Controllers
             return View();
         }
 
+        public ActionResult GetEmployees()
+        {
+            using (MVCPracticeEntities dc = new MVCPracticeEntities())
+            {
+                var empInfo = dc.Employees.OrderBy(a => a.EmployeeID).ToList();
+                return Json (new {data = empInfo}, JsonRequestBehavior.AllowGet);
+            }
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
