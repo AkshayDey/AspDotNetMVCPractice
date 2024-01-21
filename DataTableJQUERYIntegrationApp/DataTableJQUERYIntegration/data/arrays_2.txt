@@ -1,0 +1,460 @@
+﻿{
+   "dataFromTable":[
+      {
+         "EmployeeID":1,
+         "Name":"Fiona Green",
+         "Position":"Chief Operating Officer (COO)",
+         "Office":"San Francisco",
+         "Age":48,
+         "Salary":850000
+      },
+      {
+         "EmployeeID":2,
+         "Name":"Angelica Ramos",
+         "Position":"Chief Executive Officer (CEO)",
+         "Office":"London",
+         "Age":47,
+         "Salary":1200000
+      },
+      {
+         "EmployeeID":3,
+         "Name":"Paul Byrd",
+         "Position":"Chief Financial Officer (CFO)",
+         "Office":"New York",
+         "Age":64,
+         "Salary":725000
+      },
+      {
+         "EmployeeID":4,
+         "Name":"Yuri Berry",
+         "Position":"Chief Marketing Officer (CMO)",
+         "Office":"New York",
+         "Age":40,
+         "Salary":675000
+      },
+      {
+         "EmployeeID":5,
+         "Name":"Jackson Bradshaw",
+         "Position":"Director",
+         "Office":"New York",
+         "Age":65,
+         "Salary":645750
+      },
+      {
+         "EmployeeID":6,
+         "Name":"Charde Marshall",
+         "Position":"Regional Director",
+         "Office":"San Francisco",
+         "Age":36,
+         "Salary":470600
+      },
+      {
+         "EmployeeID":7,
+         "Name":"Vivian Harrell",
+         "Position":"Financial Controller",
+         "Office":"San Francisco",
+         "Age":62,
+         "Salary":452500
+      },
+      {
+         "EmployeeID":8,
+         "Name":"Cedric Kelly",
+         "Position":"Senior Javascript Developer",
+         "Office":"Edinburgh",
+         "Age":22,
+         "Salary":433060
+      },
+      {
+         "EmployeeID":9,
+         "Name":"Tatyana Fitzpatrick",
+         "Position":"Regional Director",
+         "Office":"London",
+         "Age":19,
+         "Salary":385750
+      },
+      {
+         "EmployeeID":10,
+         "Name":"Brielle Williamson",
+         "Position":"Integration Specialist",
+         "Office":"New York",
+         "Age":61,
+         "Salary":372000
+      },
+      {
+         "EmployeeID":11,
+         "Name":"Jennifer Chang",
+         "Position":"Regional Director",
+         "Office":"Singapore",
+         "Age":28,
+         "Salary":357650
+      },
+      {
+         "EmployeeID":12,
+         "Name":"Hermione Butler",
+         "Position":"Regional Director",
+         "Office":"London",
+         "Age":47,
+         "Salary":356250
+      },
+      {
+         "EmployeeID":13,
+         "Name":"Jenette Caldwell",
+         "Position":"Development Lead",
+         "Office":"New York",
+         "Age":30,
+         "Salary":345000
+      },
+      {
+         "EmployeeID":14,
+         "Name":"Quinn Flynn",
+         "Position":"Support Lead",
+         "Office":"Edinburgh",
+         "Age":22,
+         "Salary":342000
+      },
+      {
+         "EmployeeID":15,
+         "Name":"Rhona Davidson",
+         "Position":"Integration Specialist",
+         "Office":"Tokyo",
+         "Age":55,
+         "Salary":327900
+      },
+      {
+         "EmployeeID":16,
+         "Name":"Martena Mccray",
+         "Position":"Post-Sales support",
+         "Office":"Edinburgh",
+         "Age":46,
+         "Salary":324050
+      },
+      {
+         "EmployeeID":17,
+         "Name":"Tiger Nixon",
+         "Position":"System Architect",
+         "Office":"Edinburgh",
+         "Age":61,
+         "Salary":320800
+      },
+      {
+         "EmployeeID":18,
+         "Name":"Haley Kennedy",
+         "Position":"Senior Marketing Designer",
+         "Office":"London",
+         "Age":43,
+         "Salary":313500
+      },
+      {
+         "EmployeeID":19,
+         "Name":"Gloria Little",
+         "Position":"Systems Administrator",
+         "Office":"New York",
+         "Age":59,
+         "Salary":237500
+      },
+      {
+         "EmployeeID":20,
+         "Name":"Gavin Cortez",
+         "Position":"Team Leader",
+         "Office":"San Francisco",
+         "Age":22,
+         "Salary":235500
+      },
+      {
+         "EmployeeID":21,
+         "Name":"Olivia Liang",
+         "Position":"Support Engineer",
+         "Office":"Singapore",
+         "Age":64,
+         "Salary":234500
+      },
+      {
+         "EmployeeID":22,
+         "Name":"Dai Rios",
+         "Position":"Personnel Lead",
+         "Office":"Edinburgh",
+         "Age":35,
+         "Salary":217500
+      },
+      {
+         "EmployeeID":23,
+         "Name":"Brenden Wagner",
+         "Position":"Software Engineer",
+         "Office":"San Francisco",
+         "Age":28,
+         "Salary":206850
+      },
+      {
+         "EmployeeID":24,
+         "Name":"Colleen Hurst",
+         "Position":"Javascript Developer",
+         "Office":"San Francisco",
+         "Age":39,
+         "Salary":205500
+      },
+      {
+         "EmployeeID":25,
+         "Name":"Michael Silva",
+         "Position":"Marketing Designer",
+         "Office":"London",
+         "Age":66,
+         "Salary":198500
+      },
+      {
+         "EmployeeID":26,
+         "Name":"Michael Bruce",
+         "Position":"Javascript Developer",
+         "Office":"Singapore",
+         "Age":29,
+         "Salary":183000
+      },
+      {
+         "EmployeeID":27,
+         "Name":"Shad Decker",
+         "Position":"Regional Director",
+         "Office":"Edinburgh",
+         "Age":51,
+         "Salary":183000
+      },
+      {
+         "EmployeeID":28,
+         "Name":"Garrett Winters",
+         "Position":"Accountant",
+         "Office":"Tokyo",
+         "Age":63,
+         "Salary":170750
+      },
+      {
+         "EmployeeID":29,
+         "Name":"Howard Hatfield",
+         "Position":"Office Manager",
+         "Office":"San Francisco",
+         "Age":51,
+         "Salary":164500
+      },
+      {
+         "EmployeeID":30,
+         "Name":"Bruno Nash",
+         "Position":"Software Engineer",
+         "Office":"London",
+         "Age":38,
+         "Salary":163500
+      },
+      {
+         "EmployeeID":31,
+         "Name":"Shou Itou",
+         "Position":"Regional Marketing",
+         "Office":"Tokyo",
+         "Age":20,
+         "Salary":163000
+      },
+      {
+         "EmployeeID":32,
+         "Name":"Airi Satou",
+         "Position":"Accountant",
+         "Office":"Tokyo",
+         "Age":33,
+         "Salary":162700
+      },
+      {
+         "EmployeeID":33,
+         "Name":"Cara Stevens",
+         "Position":"Sales Assistant",
+         "Office":"New York",
+         "Age":46,
+         "Salary":145600
+      },
+      {
+         "EmployeeID":34,
+         "Name":"Prescott Bartlett",
+         "Position":"Technical Author",
+         "Office":"London",
+         "Age":27,
+         "Salary":145000
+      },
+      {
+         "EmployeeID":35,
+         "Name":"Sakura Yamamoto",
+         "Position":"Support Engineer",
+         "Office":"Tokyo",
+         "Age":37,
+         "Salary":139575
+      },
+      {
+         "EmployeeID":36,
+         "Name":"Serge Baldwin",
+         "Position":"Data Coordinator",
+         "Office":"Singapore",
+         "Age":64,
+         "Salary":138575
+      },
+      {
+         "EmployeeID":37,
+         "Name":"Herrod Chandler",
+         "Position":"Sales Assistant",
+         "Office":"San Francisco",
+         "Age":59,
+         "Salary":137500
+      },
+      {
+         "EmployeeID":38,
+         "Name":"Timothy Mooney",
+         "Position":"Office Manager",
+         "Office":"London",
+         "Age":37,
+         "Salary":136200
+      },
+      {
+         "EmployeeID":39,
+         "Name":"Bradley Greer",
+         "Position":"Software Engineer",
+         "Office":"London",
+         "Age":41,
+         "Salary":132000
+      },
+      {
+         "EmployeeID":40,
+         "Name":"Zenaida Frank",
+         "Position":"Software Engineer",
+         "Office":"New York",
+         "Age":63,
+         "Salary":125250
+      },
+      {
+         "EmployeeID":41,
+         "Name":"Zorita Serrano",
+         "Position":"Software Engineer",
+         "Office":"San Francisco",
+         "Age":56,
+         "Salary":115000
+      },
+      {
+         "EmployeeID":42,
+         "Name":"Suki Burks",
+         "Position":"Developer",
+         "Office":"London",
+         "Age":53,
+         "Salary":114500
+      },
+      {
+         "EmployeeID":43,
+         "Name":"Donna Snider",
+         "Position":"Customer Support",
+         "Office":"New York",
+         "Age":27,
+         "Salary":112000
+      },
+      {
+         "EmployeeID":44,
+         "Name":"Hope Fuentes",
+         "Position":"Secretary",
+         "Office":"San Francisco",
+         "Age":41,
+         "Salary":109850
+      },
+      {
+         "EmployeeID":45,
+         "Name":"Caesar Vance",
+         "Position":"Pre-Sales Support",
+         "Office":"New York",
+         "Age":21,
+         "Salary":106450
+      },
+      {
+         "EmployeeID":46,
+         "Name":"Sonya Frost",
+         "Position":"Software Engineer",
+         "Office":"Edinburgh",
+         "Age":23,
+         "Salary":103600
+      },
+      {
+         "EmployeeID":47,
+         "Name":"Lael Greer",
+         "Position":"Systems Administrator",
+         "Office":"London",
+         "Age":21,
+         "Salary":103500
+      },
+      {
+         "EmployeeID":48,
+         "Name":"Thor Walton",
+         "Position":"Developer",
+         "Office":"New York",
+         "Age":61,
+         "Salary":98540
+      },
+      {
+         "EmployeeID":49,
+         "Name":"Michelle House",
+         "Position":"Integration Specialist",
+         "Office":"Sidney",
+         "Age":37,
+         "Salary":95400
+      },
+      {
+         "EmployeeID":50,
+         "Name":"Gavin Joyce",
+         "Position":"Developer",
+         "Office":"Edinburgh",
+         "Age":42,
+         "Salary":92575
+      },
+      {
+         "EmployeeID":51,
+         "Name":"Jena Gaines",
+         "Position":"Office Manager",
+         "Office":"London",
+         "Age":30,
+         "Salary":90560
+      },
+      {
+         "EmployeeID":52,
+         "Name":"Finn Camacho",
+         "Position":"Support Engineer",
+         "Office":"San Francisco",
+         "Age":47,
+         "Salary":87500
+      },
+      {
+         "EmployeeID":53,
+         "Name":"Jonas Alexander",
+         "Position":"Developer",
+         "Office":"San Francisco",
+         "Age":30,
+         "Salary":86500
+      },
+      {
+         "EmployeeID":54,
+         "Name":"Ashton Cox",
+         "Position":"Junior Technical Author",
+         "Office":"San Francisco",
+         "Age":66,
+         "Salary":86000
+      },
+      {
+         "EmployeeID":55,
+         "Name":"Unity Butler",
+         "Position":"Marketing Designer",
+         "Office":"San Francisco",
+         "Age":47,
+         "Salary":85675
+      },
+      {
+         "EmployeeID":56,
+         "Name":"Doris Wilder",
+         "Position":"Sales Assistant",
+         "Office":"Sidney",
+         "Age":23,
+         "Salary":85600
+      },
+      {
+         "EmployeeID":57,
+         "Name":"Jennifer Acosta",
+         "Position":"Junior Javascript Developer",
+         "Office":"Edinburgh",
+         "Age":43,
+         "Salary":75650
+      }
+   ]
+}

@@ -41,10 +41,16 @@ namespace DemoMVCApplication.Controllers
             return View();
         }
 
-        //public ActionResult GetList()
-        //{
-            
-        //}
+        public ActionResult GetList()
+        {
+            using (Practice_DB_OwnEntities dc = new Practice_DB_OwnEntities())
+            {
+                var dataFromDB = dc.Employees.ToList<Employee>();
+                object data = new object();
+                return Json(data = dataFromDB, JsonRequestBehavior.AllowGet);
+            }
+
+        }
 
         public ActionResult About()
         {

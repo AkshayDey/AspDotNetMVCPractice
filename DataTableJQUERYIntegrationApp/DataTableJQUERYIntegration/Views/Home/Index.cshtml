@@ -1,0 +1,113 @@
+﻿@{
+    ViewBag.Title = "Home Page - Employee List";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h2>JqueryTable</h2>
+
+<table id="myDataTable" style="width:100%">
+        <thead>
+            <tr>
+                <th>EmployeeID</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+    </table>
+
+
+@*<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Extn.</th>
+            <th>Start date</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+</table>*@
+
+
+
+
+<link href="//cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" rel="stylesheet" />
+@*<link href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet" />*@
+
+@section scripts{
+    <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    @*<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>*@
+    @*<script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>*@
+
+
+    <script>
+            //$(document).ready(function () {
+
+            //    $("#myDataTable").DataTable(
+            //        {
+            //            "ajax": {
+            //                "url": "/Home/GetList",
+            //                "type": "GET",
+            //                "datatype": "json"
+            //            },
+            //            "columns": [
+
+            //                { "data": "Name" },
+            //                { "data": "Position" },
+            //                { "data": "Office" },
+            //                { "data": "Age" },
+            //                { "data": "Salary" }
+            //            ]
+
+            //        });
+
+            //});
+
+
+            //$(document).ready(function () {
+            //    // Make the AJAX request
+            //    $.ajax({
+            //        url: "/Home/GetList",
+            //        type: "GET",
+            //        dataType: "json",
+            //        success: function (data) {
+            //            // Initialize DataTable with the retrieved data
+            //            $("#myDataTable").DataTable({
+            //                data: data,
+            //                columns: [
+            //                    { "data": "Name" },
+            //                    { "data": "Position" },
+            //                    { "data": "Office" },
+            //                    { "data": "Age" },
+            //                    { "data": "Salary" }
+            //                ]
+            //            });
+            //        },
+            //        error: function (xhr, status, error) {
+            //            console.error("AJAX Error:", status, error);
+            //        }
+            //    });
+            //});
+
+
+
+            $(document).ready(function () {
+
+                $('#myDataTable').DataTable({
+                    ajax: '/data/arrays_2.txt',
+                    // Additional DataTable options can be added here
+                });
+
+            });
+
+
+    </script>
+}
+
+
+
